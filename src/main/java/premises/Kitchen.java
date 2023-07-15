@@ -1,10 +1,8 @@
 package main.java.premises;
 
 import main.java.employees.*;
-import main.java.menu.DishItem;
 import main.java.menu.Item;
 
-import java.util.ArrayList;
 
 import java.util.List;
 
@@ -33,23 +31,4 @@ public class Kitchen {
         }
     }
 
-//    private List<Item> filterDishItems(List<Item> items) {
-//        List<Item> dishItems = new ArrayList<>();
-//        for (Item item : items) {
-//            if (item instanceof DishItem) {
-//                dishItems.add(item);
-//            }
-//        }
-//        return dishItems;
-//    }
-//
-//    private List<Item> filterDishItemsByIngredient(List<Item> items, String ingredient) {
-//        List<Item> filteredItems = new ArrayList<>();
-//        for (Item item : items) {
-//            if (item instanceof DishItem && ((DishItem) item).getIngredients().contains(ingredient)) {
-//                filteredItems.add(item);
-//            }
-//        }
-//        return filteredItems;
-//    }
 }

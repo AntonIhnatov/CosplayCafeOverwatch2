@@ -1,9 +1,6 @@
 package main.java.premises;
 
 import main.java.employees.Waiter;
-
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class DiningHall {

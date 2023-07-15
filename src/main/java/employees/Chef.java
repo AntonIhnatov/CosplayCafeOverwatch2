@@ -20,36 +20,4 @@ public class Chef extends Employee implements Cook {
     }
 }
 
-//    @Override
-//    public void cookItem(List<Item> selectedItems) {
-//        for (Item item : selectedItems) {
-//            if (item instanceof DishItem) {
-//                DishItem dish = (DishItem) item;
-//                List<String> ingredients = dish.getIngredients();
-//
-//                // Перевірка інгредієнтів та готування страви відповідним кухарем
-//                if (ingredients.contains("М'ясо")) {
-//                    // Готуємо страву з м'ясом
-//                    System.out.println("Готуємо страву з м'ясом: " + dish.getName());
-//                } else if (ingredients.contains("Овочі")) {
-//                    // Готуємо страву з овочами
-//                    System.out.println("Готуємо страву з овочами: " + dish.getName());
-//                } else {
-//                    // Інші страви
-//                    System.out.println("Готуємо іншу страву: " + dish.getName());
-//                }
-//            }
-//        }
-//    }
-
-    //    @Override
-//    public void cookItem(DishItem dishItem, List<DishItem> dishItems) {
-//        for (DishItem item : dishItems) {
-//            if (item.getName().equals(dishItem.getName())) {
-//                System.out.println("Повар готовит блюдо: " + item.getName());
-//                System.out.println("Ингредиенты: " + item.getIngredients());
-//                break;
-//            }
-//        }
-//    }
 
