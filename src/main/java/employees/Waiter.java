@@ -1,4 +1,4 @@
-package main.java.employees;
+package employees;
 
 
 public class Waiter extends Employee{

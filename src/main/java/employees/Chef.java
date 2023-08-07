@@ -1,7 +1,7 @@
-package main.java.employees;
+package employees;
 
-import main.java.menu.DishItem;
-import main.java.menu.Item;
+import menu.DishItem;
+import menu.Item;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ public class Chef extends Employee implements Cook {
         selectedItems.stream()
                 .filter(item -> item instanceof DishItem)
                 .map(item -> (DishItem) item)
-                .forEach(dish -> System.out.println("\"Народ, готовим блюдо с названием " + dish.getName()+ "\""));
+                .forEach(dish -> System.out.println(getName() + " говорит своей команде: " + "\"Народ, готовим блюдо с названием " + dish.getName()+ "\""));
         System.out.println();
     }
 }

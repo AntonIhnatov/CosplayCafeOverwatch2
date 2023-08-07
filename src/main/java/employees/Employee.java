@@ -1,4 +1,7 @@
-package main.java.employees;
+package employees;
+
+import menu.Item;
+import java.util.List;
 
 public class Employee {
     private final String name;
@@ -16,4 +19,10 @@ public class Employee {
     public String getAbilities() {
         return abilities;
     }
+
+    public void cookItem(List<Item> selectedItems) {
+    }
+
+//    public void cookItem(List<Item> selectedItems) {
+//    }
 }

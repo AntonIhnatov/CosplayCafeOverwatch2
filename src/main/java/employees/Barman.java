@@ -1,11 +1,12 @@
-package main.java.employees;
+package employees;
 
-import main.java.menu.DrinkItem;
-import main.java.menu.Item;
+import menu.DrinkItem;
+import menu.Item;
+import employees.Cook;
 
 import java.util.List;
 
-public class Barman extends Employee implements Cook{
+public class Barman extends Employee implements Cook {
 
     public Barman(String name, String abilities) {
         super(name, abilities);

@@ -1,11 +1,11 @@
-package main.java.employees;
+package employees;
 
-import main.java.menu.DishItem;
-import main.java.menu.Item;
+import menu.DishItem;
+import menu.Item;
 
 import java.util.List;
 
-public class SauceCook extends Employee implements Cook{
+public class SauceCook extends Employee implements Cook {
 
     public SauceCook(String name, String abilities) {
         super(name, abilities);
@@ -18,8 +18,14 @@ public class SauceCook extends Employee implements Cook{
                 DishItem dish = (DishItem) item;
                 if (dish.getIngredients().contains("Соус")) {
                     System.out.println(getName() +  " готовит соус для блюда: "  + dish.getName());
+//                    System.out.println("Повар "+ getName() + " закончил готовить часть блюда: " + dish.getName());
                 }
             }
+        }
+        try {
+            Thread.sleep(2000); // Задержка в 2 секунды (можете настроить значение по вашему усмотрению)
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
         }
     }
 }

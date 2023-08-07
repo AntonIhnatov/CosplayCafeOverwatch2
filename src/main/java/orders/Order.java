@@ -1,7 +1,7 @@
-package main.java.orders;
-import main.java.menu.DishItem;
-import main.java.menu.DrinkItem;
-import main.java.menu.Item;
+package orders;
+import menu.DishItem;
+import menu.DrinkItem;
+import menu.Item;
 
 import java.util.*;
 

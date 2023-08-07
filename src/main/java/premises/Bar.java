@@ -1,8 +1,8 @@
-package main.java.premises;
+package premises;
 
-import main.java.employees.Barman;
-import main.java.menu.DrinkItem;
-import main.java.menu.Item;
+import employees.Barman;
+import menu.DrinkItem;
+import menu.Item;
 
 import java.util.List;
 

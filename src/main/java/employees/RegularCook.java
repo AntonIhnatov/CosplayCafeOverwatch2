@@ -1,11 +1,11 @@
-package main.java.employees;
+package employees;
 
-import main.java.menu.DishItem;
-import main.java.menu.Item;
+import menu.DishItem;
+import menu.Item;
 
 import java.util.List;
 
-public class RegularCook extends Employee implements Cook{
+public class RegularCook extends Employee implements Cook {
     public RegularCook(String name, String abilities) {
         super(name, abilities);
     }
@@ -34,6 +34,7 @@ public class RegularCook extends Employee implements Cook{
         if ((dish.getIngredients().contains("Сыр"))) {
             System.out.println("- Сыр");
         }
+//        System.out.println("Повар "+ getName() + " закончил готовить часть блюда: " + dish.getName());
     }
 
 }

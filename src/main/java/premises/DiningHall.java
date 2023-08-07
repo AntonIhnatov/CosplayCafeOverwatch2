@@ -1,6 +1,7 @@
-package main.java.premises;
+package premises;
 
-import main.java.employees.Waiter;
+import employees.Waiter;
+
 import java.util.Scanner;
 
 public class DiningHall {
@@ -38,25 +39,19 @@ public class DiningHall {
         printTableOptions();
 
         int tableNumber = scanner.nextInt();
-        scanner.nextLine(); // Считываем символ новой строки после считывания числа
+        scanner.nextLine();
 
         RestaurantTable table = selectTableByNumber(tableNumber);
         if (table == null) {
-            System.out.println("Неверный выбор столика");
-            return;
+            System.out.println("Неверный выбор столика. Пожалуйста, выберите столик снова.");
+            selectTable();
+        } else {
+            selectedTable = table;
+            printSelectedTableInfo();
+
+            Waiter selectedWaiter = getWaiter(selectedTable);
+            printSelectedWaiterInfo(selectedWaiter);
         }
-
-        selectedTable = table;
-        printSelectedTableInfo();
-
-        String waiterName = String.valueOf(getWaiter(table));
-        if (waiterName == null) {
-            System.out.println("Неверный выбор официанта");
-            return;
-        }
-
-        Waiter selectedWaiter = getWaiter(selectedTable);
-        printSelectedWaiterInfo(selectedWaiter);
     }
 
 

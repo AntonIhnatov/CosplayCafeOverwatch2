@@ -1,6 +1,7 @@
-package main.java.employees;
+package employees;
 
-import main.java.menu.Item;
+import menu.Item;
+
 import java.util.List;
 
 public interface Cook {
